@@ -6,397 +6,408 @@
     <meta http-equiv="Content-Type" 
           content="text/html; charset=iso-8859-1" />
     <meta name="description" 
-	  content="Open Source Software projects, freeware software, documentation, user guide's and technical guides from EarthWalk Software (Jay Wheeler)" />
+	  content="Open Source Software projects, freeware software, documentation, user guide's and technical guides" />
     <meta name="keywords" 
-	  content="open source software project freeware documentation user guides technical guides earthwalk software jay wheeler animation javascript halloween haunted hollow taxestimator tax estimator estimation perl php 5 csharp c# .net" />
+	  content="open source software freeware documentation guides technical earthwalk docker container linux debian alpine ubuntu centos fedora" />
+      <style>
+        body 
+	{
+	 margin-top: 0px;
+	 margin-left: 0px;
+	 margin-right: 0px;
+	 margin-bottom: 0px;
+        }
 
-    <!-- 
-    <link rel="stylesheet" href="/style.css" type="text/css" />
-    -->
-<style>
-body {
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
+        #header
+	{
+         width: 800px;
+	 position:relative; 
+	 height: 162px;
+	 background-image:url(images/header.jpg);
+	 background-repeat:no-repeat;
+        }
 
-#header{
-	width: 800px;
-	position:relative; 
-	height: 162px;
-	background-image:url(images/header.jpg);
-	background-repeat:no-repeat;
-}
+        #companyname 
+	{
+	 position:absolute;
+	 font-family: Verdana, Arial, Helvetica, sans-serif;
+	 color: #FFFFFF;
+	 font-size: 36px;
+	 font-weight: bold;
+	 margin-top:50px;
+	 margin-left:40px;
+	 left: 0px;
+	 top: 0px;
+        }
 
-#companyname {
-	position:absolute;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #FFFFFF;
-	font-size: 36px;
-	font-weight: bold;
-	margin-top:50px;
-	margin-left:40px;
-	left: 0px;
-	top: 0px;
-}
+        #menu
+	{
+	 position:absolute;
+	 bottom: 20px;
+	 right: 30px;
+	 font-family: Verdana, Arial, Helvetica, sans-serif;
+	 font-size: 10px;
+	 font-weight: bold;
+        }
+        #menu a
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 10px;
+         font-weight: bold;
+         color:#000099;
+         text-decoration:none;
+        }
+        #menu a:hover
+        {
+         color:#7DA5E0;
+         text-decoration:none;
+        }
 
-#menu{
-	position:absolute;
-	bottom: 20px;
-	right: 30px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
-}
-#menu a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
-	color:#000099;
-	text-decoration:none;
-}
-#menu a:hover{
-	color:#7DA5E0;
-	text-decoration:none;
-}
+        #leftpanel
+        {
+         float:left;
+         width:200px;
+        }
 
-#leftpanel{
-	float:left;
-	width:200px;
-}
+        #content
+        {
+         width: 800px;
+        }
+        #contenttext
+        {
+         float:right;
+         width: 580px;
+        }
 
-#content{
-	width: 800px;
-}
-#contenttext{
-	float:right;
-	width: 580px;
-}
+        #WTPBlock
+        {
+         text-align: center;
+         border-style: none;
+         border-width: 1px;
+         border-color: blue;
+         color:#000099;
+        }
 
-#WTPBlock{
-	text-align: center;
-	border-style: none;
-	border-width: 1px;
-	border-color: blue;
-	color:#000099;
-}
+        .footer
+        {
+         width: 779px;
+         height: 32px;
+         background-image:url(images/bg_footer.gif);
+         background-repeat:no-repeat;
+         clear:both;
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 8px;
+         font-weight: bold;
+         color:#FFFFFF;
+        }
 
-.footer{
-	width: 779px;
-	height: 32px;
-	background-image:url(images/bg_footer.gif);
-	background-repeat:no-repeat;
-	clear:both;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 8px;
-	font-weight: bold;
-	color:#FFFFFF;
-}
+        .footer a
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 8px;
+         font-weight: bold;
+         color:#000099;
+         text-decoration:none;
+        }
+        .footer a:hover
+        {
+         color:#FFFFFF;
+         text-decoration:none;
+        }
+        .EWSoftware_Blue
+        {
+         color:#000099;
+        }
 
-.footer a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 8px;
-	font-weight: bold;
-	color:#000099;
-	text-decoration:none;
-}
-.footer a:hover{
-	color:#FFFFFF;
-	text-decoration:none;
-}
-.EWSoftware_Blue{
-	color:#000099;
-}
+        .table_top
+        {
+         width: 204px; 
+         height: 27px;
+         background-image:url(images/table_top.jpg);
+         background-repeat:no-repeat;
+        }
+        .table_content
+        {
+         width: 204px;
+         background-image:url(images/table_content.jpg);
+         background-repeat:repeat-y;
+        }
+        .table_text
+        {
+         margin-left:15px;
+         margin-right:15px;
+         text-align:left;
+        }
+        .table_text_project
+        {
+         margin-left:15px;
+         margin-right:15px;
+         text-align:left;
+        }
+        .table_bottom
+        {
+         width: 204px; height: 23px;
+        }
 
-.table_top{
-	width: 204px; 
-	height: 27px;
-	background-image:url(images/table_top.jpg);
-	background-repeat:no-repeat;
-}
-.table_content{
-	width: 204px;
-	background-image:url(images/table_content.jpg);
-	background-repeat:repeat-y;
-}
-.table_text{
-	margin-left:15px;
-	margin-right:15px;
-	text-align:left;
-}
-.table_text_project{
-	margin-left:15px;
-	margin-right:15px;
-	text-align:left;
-}
-.table_bottom{
-	width: 204px; height: 23px;
-}
+        .news_date 
+        {	
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 10px;
+         font-weight: bold;
+         color: #0099CC;
+        }
 
-.news_date {	
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
-	color: #0099CC;
-}
+        .body_text 
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 11px;
+         color: #000099;
+        }
+        .body_text a
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 11px;
+         font-weight: bold;
+         text-decoration:none;
+         color: #000099;
+        }
+        .body_text a:hover
+        {
+         color: #7DA5E0;
+         text-decoration:none;
+        }
 
-.body_text {	
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	color: #000099;
-}
-.body_text a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	font-weight: bold;
-	text-decoration:none;
-	color: #000099;
-}
-.body_text a:hover{
-	color: #7DA5E0;
-	text-decoration:none;
-}
+        .doc_text 
+        {	
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         color: #000099;
+         font-size: 11px;
+        }
+        .doc_text a
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 11px;
+         font-weight: bold;
+         text-decoration:none;
+         color: #000099;
+        }
+        .doc_text a:hover
+        {
+         font-size:11px;
+         font-weight:bold;
+         color: #7DA5E0;
+         text-decoration:none;
+        }
+        .doc_text_title
+        {
+         font-size: 16px;
+         font-weight:bold;
+         text-align: center;
+        }
 
-.doc_text {	
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-    color: #000099;
-	font-size: 11px;
-}
-.doc_text a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	font-weight: bold;
-	text-decoration:none;
-	color: #000099;
-}
-.doc_text a:hover{
-	font-size:11px;
-	font-weight:bold;
-	color: #7DA5E0;
-	text-decoration:none;
-}
-.doc_text_title{
-	font-size: 16px;
-	font-weight:bold;
-	text-align: center;
-}
+        .project_text 
+        {	
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         color:#000099;
+         font-size: 11px;
+        }
+        .project_text a
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 11px;
+         font-weight: bold;
+         text-decoration:none;
+         color: #000099;
+        }
+        .project_text a:hover
+        {
+         color: #7DA5E0;
+         text-decoration:none;
+        }
 
-.project_text {	
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color:#000099;
-	font-size: 11px;
-}
-.project_text a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	font-weight: bold;
-	text-decoration:none;
-	color: #000099;
-}
-.project_text a:hover{
-	color: #7DA5E0;
-	text-decoration:none;
-}
+        .subtitle_gray 
+        {
+         font-family:Verdana, Arial, Helvetica, sans-serif;	
+         font-weight: bold;
+         font-size: 14px;
+         color: #CCCCCC;
+        }
+        .subtitle_gray a
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 14px;
+         font-weight: bold;
+         color:#CCCCCC;
+         text-decoration:none;
+         }
+        .subtitle_gray a:hover
+        {
+         color:#000099;
+         text-decoration:none;
+        }
 
-.news_more {	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	color: #7DA5E0;
-	font-weight: bold;
-}
-.news_more a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
-	color:#7DA5E0;
-	text-decoration:none;
-}
-.news_more a:hover{
-	color:#000099;
-	text-decoration:none;
-}
+        .title_blue
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif; 
+         font-weight: bold; 
+         font-size: 26px; 
+         color: #7DA5E0; 
+        }
+        .title_panel 
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 12px;
+         font-weight: bold;
+        }
 
-.news_text {	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-}
+        #block
+        {
+         padding: 15px;
+         padding-top: 20px;
+         font-family: Verdana, Arial, sans-serif;
+         background-color: #f9f9f9;
+         color: #000099;
+         border-color: #000099;
+         border-style: solid;
+         border-width: 1px;
+        }
+        #noteblock
+        {
+         padding: 20px;
+         font-family: Verdana, Arial, sans-serif;
+         background-color: #FFFFFF;
+         color: #000099;
+         border-color: #000099;
+         border-style: solid;
+         border-width: 1px;
+        }
+        #centered
+        {
+         text-align:center;
+        }
+        .subTaxestimator
+        {
+         font-weight: bold;
+        }
+        .subTaxestimatorLarge
+        {
+         font-size: 12px;
+         font-weight: bold;
+        }
+        .subTaxestimatorLarge a
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 14px;
+         font-weight: bold;
+         color:#000099;
+         text-decoration:none;
+        }
+        .subTaxestimatorLarge a:hover
+        {
+         color:#7DA5E0;
+         text-decoration:none;
+        }
 
-.subtitle_gray {	font-family:Verdana, Arial, Helvetica, sans-serif;	
-	font-weight: bold;
-	font-size: 14px;
-	color: #CCCCCC;
-}
-.subtitle_gray a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	color:#CCCCCC;
-	text-decoration:none;
-}
-.subtitle_gray a:hover{
-	color:#000099;
-	text-decoration:none;
-}
+        .subLLRBTree
+        {
+         font-weight: bold;
+        }
+        .subLLRBTreeLarge
+        {
+         font-size: 12px;
+         font-weight: bold;
+         color:#CC0033;
+        }
+        .subLLRBTreeLarge a
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 14px;
+         font-weight: bold;
+         color:#CC0033;
+         text-decoration:none;
+        }
+        .subLLRBTreeLarge a:hover
+        {
+         color:#7DA5E0;
+         text-decoration:none;
+        }
 
-.title_blue {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 26px; color: #7DA5E0; }
-.title_panel {	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	font-weight: bold;
-}
+        .subIGSGateway
+        {
+         font-weight: bold;
+        }
+        .subIGSGatewayLarge
+        {
+         font-size: 14px;
+         font-weight: bold;
+         color:#000099;
+        }
+        .subIGSGatewayLarge a
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 14px;
+         font-weight: bold;
+         color:#000099;
+         text-decoration:none;
+        }
+        .subIGSGatewayLarge a:hover
+        {
+         color:#7DA5E0;
+         font-size: 14px;
+         text-decoration:none;
+        }
 
-#block{
-	padding: 15px;
-	padding-top: 20px;
-	font-family: Verdana, Arial, sans-serif;
-	background-color: #f9f9f9;
-	color: #000099;
-	border-color: #000099;
-	border-style: solid;
-	border-width: 1px;
-}
-#noteblock{
-	padding: 20px;
-	font-family: Verdana, Arial, sans-serif;
-	background-color: #FFFFFF;
-	color: #000099;
-	border-color: #000099;
-	border-style: solid;
-	border-width: 1px;
-}
-#centered{
-	text-align:center;
-}
-.subTaxestimator
-{
-	font-weight: bold;
-}
-.subTaxestimatorLarge
-{
-	font-size: 12px;
-	font-weight: bold;
-}
-.subTaxestimatorLarge a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	color:#000099;
-	text-decoration:none;
-}
-.subTaxestimatorLarge a:hover{
-	color:#7DA5E0;
-	text-decoration:none;
-}
+        .msSoftware
+        {
+         font-style: italic;
+         font-weight: bold;
+        }
 
-.subLLRBTree
-{
-	font-weight: bold;
-}
-.subLLRBTreeLarge
-{
-	font-size: 12px;
-	font-weight: bold;
-	color:#CC0033;
-}
-.subLLRBTreeLarge a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	color:#CC0033;
-	text-decoration:none;
-}
-.subLLRBTreeLarge a:hover{
-	color:#7DA5E0;
-	text-decoration:none;
-}
+        .subtitle
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         color:#000099;
+         font-size:12px;
+         font-weight: bold;
+         text-decoration: underline;
+        }
 
-.subIGSGateway
-{
-	font-weight: bold;
-}
-.subIGSGatewayLarge
-{
-	font-size: 14px;
-	font-weight: bold;
-	color:#000099;
-}
-.subIGSGatewayLarge a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	color:#000099;
-	text-decoration:none;
-}
-.subIGSGatewayLarge a:hover{
-	color:#7DA5E0;
-	font-size: 14px;
-	text-decoration:none;
-}
+        .added
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 9px;
+         font-weight: bold;
+         color:#CC3333;
+        }
 
-.taxEngineLibrary
-{
-	font-style: italic;
-	font-weight: bold;
-}
-.taxEngineLibrary a{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
-	color:#000099;
-	text-decoration:none;
-}
-.taxEngineLibrary a:hover{
-	color:#7DA5E0;
-	text-decoration:none;
-}
+        .updated
+        {
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         font-size: 9px;
+         font-weight: bold;
+         color:#006600;
+        }
 
-.msSoftware
-{
-	font-style: italic;
-	font-weight: bold;
-}
+        li.disc
+        {
+         list-style-type: disc;
+        }
+        li.indent
+        {
+         list-style-type: none;
+        }
+        li.indent2
+        {
+         list-style-type: none;
+         margin-left: 24px;
+        }
+        li.numbers
+        {
+         list-style-type: decimal;
+        }
 
-.subtitle
-{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color:#000099;
-	font-size:12px;
-	font-weight: bold;
-	text-decoration: underline;
-}
+    </style>
 
-.added
-{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 9px;
-	font-weight: bold;
-	color:#CC3333;
-}
-
-.updated
-{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 9px;
-	font-weight: bold;
-	color:#006600;
-}
-
-li.disc
-{
-	list-style-type: disc;
-}
-li.indent
-{
-	list-style-type: none;
-}
-li.indent2
-{
-	list-style-type: none;
-	margin-left: 24px;
-}
-li.numbers
-{
-	list-style-type: decimal;
-}
-</style>
   </head>
   <body>
     <div id="page" align="center">
