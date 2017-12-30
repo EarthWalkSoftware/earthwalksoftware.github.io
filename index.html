@@ -23,6 +23,13 @@
        margin-bottom: 0px;
       }
 
+    </style>
+
+    <!-- ------------------------- -->
+    <!--       page header         -->
+    <!-- ------------------------- -->
+    <style>
+
       #header
       {
        width: 800px;
@@ -58,13 +65,6 @@
        top: 0px;
       }
 
-    </style>
-
-    <!-- ------------------- -->
-    <!--        menu         -->
-    <!-- ------------------- -->
-    <style>
-
       #menu
       {
        position:absolute;
@@ -80,12 +80,12 @@
        font-family: Verdana, Arial, Helvetica, sans-serif;
        font-size: 10px;
        font-weight: bold;
-       color:#7DA5E0;
+       color:#000099;
        text-decoration:none;
       }
       #menu a:hover
       {
-       color:#000099;
+       color:#7DA5E0;
        text-decoration:none;
       }
 
@@ -102,8 +102,38 @@
        width:200px;
       }
 
+      .leftMenuTop
+      {
+       width: 204px; 
+       height: 27px;
+       background-image:url(images/table_top.jpg);
+       background-repeat:no-repeat;
+      }
+      .leftMenuPanel 
+      {
+       font-family: Verdana, Arial, Helvetica, sans-serif;
+       font-size: 12px;
+       font-weight: bold;
+       color:#000099;
+      }
+      .leftMenuContent
+      {
+       width: 204px;
+       background-image:url(images/table_content.jpg);
+       background-repeat:repeat-y;
+      }
+      .leftMenuText
+      {
+       margin-left:15px;
+       margin-right:15px;
+       text-align:left;
+      }
+      .leftMenuBottom
+      {
+       width: 204px; height: 23px;
+      }
     </style>
-	  
+
     <!-- ------------------- -->
     <!--      content        -->
     <!-- ------------------- -->
@@ -167,54 +197,6 @@
          color:#ffffff;
         }
     </style>
-
-    <!-- ------------------- -->
-    <!--        table        -->
-    <!-- ------------------- -->
-    <style>
-        .table_top
-        {
-         width: 204px; 
-         height: 27px;
-         background-image:url(images/table_top.jpg);
-         background-repeat:no-repeat;
-        }
-        .table_content
-        {
-         width: 204px;
-         background-image:url(images/table_content.jpg);
-         background-repeat:repeat-y;
-        }
-        .table_text
-        {
-         margin-left:15px;
-         margin-right:15px;
-         text-align:left;
-        }
-        .table_text_project
-        {
-         margin-left:15px;
-         margin-right:15px;
-         text-align:left;
-        }
-        .table_bottom
-        {
-         width: 204px; height: 23px;
-        }
-      </style>
-
-    <!-- ------------------- -->
-    <!--     news_date       -->
-    <!-- ------------------- -->
-    <style>
-        .news_date 
-        {	
-         font-family: Verdana, Arial, Helvetica, sans-serif;
-         font-size: 10px;
-         font-weight: bold;
-         color: #0099CC;
-        }
-      </style>
 
     <!-- ------------------- -->
     <!--        body         -->
@@ -296,37 +278,6 @@
         {
          color: #7DA5E0;
          text-decoration:none;
-        }
-      </style>
-
-    <!-- ------------------- -->
-    <!--     news_more       -->
-    <!-- ------------------- -->
-      <style>
-        .news_more 
-	{
-         font-family: Verdana, Arial, Helvetica, sans-serif;
-         font-size: 10px;
-         color: #7DA5E0;
-         font-weight: bold;
-        }
-        .news_more a
-        {
-         font-family: Verdana, Arial, Helvetica, sans-serif;
-         font-size: 10px;
-         font-weight: bold;
-         color:#7DA5E0;
-         text-decoration:none;
-        }
-        .news_more a:hover
-        {
-         color:#000099;
-         text-decoration:none;
-        }
-        .news_text 
-        {
-         font-family: Verdana, Arial, Helvetica, sans-serif;
-         font-size: 10px;
         }
       </style>
 
@@ -542,24 +493,24 @@
           <!--    Directory                         -->
           <!--                                      -->
           <!--                                      -->
-          <div class="table_top">
-            <span class="title_panel">Links</span>
+          <div class="leftMenuTop">
+            <span class="leftMenuPanel">Links</span>
           </div> <!-- table_top -->
 
-          <div class="table_content">
+          <div class="leftMenuContent">
 
-            <div class="table_text">
+            <div class="leftMenuText">
               <span class="news_more"><a href="https://hub.docker.com/u/earthwalksoftware/">Docker Hub</a></span><br />
               <span class="news_more"><a href="https://github.com/EarthWalkSoftware?tab=repositories">Git Hub</a></span><br />
               <span class="news_more"><a href="http://jaywheeler.users.sourceforge.net/index.html">Source Forge</a></span><br />
               <span class="news_more"><a href="https://github.com/EarthWalkSoftware/earthwalksoftware.github.io/wiki">Wiki Documents</a></span><br />
-            </div> <!-- table_text -->
+            </div> <!-- leftMenuText -->
 
-          </div> <!-- table_content -->
+          </div> <!-- leftMenuContent -->
 
-          <div class="table_bottom">
+          <div class="leftTableBottom">
             <img src="images/table_bottom.jpg" width="204" height="23" border="0" alt="" />
-          </div> <!-- table_bottom -->
+          </div> <!-- leftTableBottom -->
 
           <br />
 
