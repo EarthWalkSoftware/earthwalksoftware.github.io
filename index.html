@@ -39,7 +39,7 @@
        background-repeat:no-repeat;
       }
 
-      #companyname 
+      #headerCompany 
       {
        position:absolute;
        font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -52,7 +52,7 @@
        top: 0px;
       }
 
-      #companysm 
+      #headerCompanySm 
       {
        position:absolute;
        font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -65,7 +65,7 @@
        top: 0px;
       }
 
-      #menu
+      #headerMenu
       {
        position:absolute;
        bottom: 20px;
@@ -75,7 +75,7 @@
        font-weight: normal;
        color: #000099;
       }
-      #menu a
+      #headerMenu a
       {
        font-family: Verdana, Arial, Helvetica, sans-serif;
        font-size: 10px;
@@ -83,7 +83,7 @@
        color:#000099;
        text-decoration:none;
       }
-      #menu a:hover
+      #headerMenu a:hover
       {
        color:#7DA5E0;
        text-decoration:none;
@@ -131,11 +131,16 @@
       }
       .leftMenuText a
       {
+       font-family: Verdana, Arial, Helvetica, sans-serif;
+       font-size: 10px;
+       font-weight: bold;
        color:#000099;
+       text-decoration:none;
       }
       .leftMenuText a:hover
       {
        color:#7DA5E0;
+       text-decoration:none;
       }
       .leftMenuBottom
       {
@@ -155,37 +160,6 @@
         {
          float:right;
          width: 580px;
-        }
-    </style>
-
-    <!-- ------------------- -->
-    <!--      footer         -->
-    <!-- ------------------- -->
-    <style>  
-        .footer
-        {
-         width: 779px;
-         height: 32px;
-         background-image:url(images/bg_footer.gif);
-         background-repeat:no-repeat;
-         clear:both;
-         font-family: Verdana, Arial, Helvetica, sans-serif;
-         font-size: 9px;
-         font-weight: bold;
-         color:#FFFFFF;
-        }
-        .footer a
-        {
-         font-family: Verdana, Arial, Helvetica, sans-serif;
-         font-size: 9px;
-         font-weight: bold;
-         color:#000099;
-         text-decoration:none;
-        }
-        .footer a:hover
-        {
-         color:#FFFFFF;
-         text-decoration:none;
         }
     </style>
 
@@ -372,35 +346,33 @@
     <!-- ------------------- -->
     <!--   promoBlock        -->
     <!-- ------------------- -->
-      <style>
-        .promoBlock
-        {
-         font-weight: normal;
-	 font-size: 12px;
-        }
-        .promoBlock a
-        {
-         font-family: Verdana, Arial, Helvetica, sans-serif;
-         font-size: 12px;
-         font-weight: bold;
-         color:#000099;
-         text-decoration:none;
-        }
-        .promoBlock a:hover
-        {
-         color:#7DA5E0;
-         font-size: 12px;
-         text-decoration:none;
-        }
-
-        .promoBlockHighlight
-        {
-         font-weight: bold;
-	 font-size: 12px;
-	 color:#000099;
-        }
-
-      </style>
+    <style>
+      .promoBlock
+      {
+       font-weight: normal;
+       font-size: 12px;
+      }
+      .promoBlock a
+      {
+       font-family: Verdana, Arial, Helvetica, sans-serif;
+       font-size: 12px;
+       font-weight: bold;
+       color:#000099;
+       text-decoration:none;
+      }
+      .promoBlock a:hover
+      {
+       color:#7DA5E0;
+       font-size: 12px;
+       text-decoration:none;
+      }
+      .promoBlockHighlight
+      {
+       font-weight: bold;
+       font-size: 12px;
+       color:#000099;
+      }
+    </style>
 
     <!-- ------------------- -->
     <!--     subtitle        -->
@@ -435,25 +407,56 @@
     <!-- ------------------- -->
     <!--      li             -->
     <!-- ------------------- -->
-      <style>
-        li.disc
-        {
-         list-style-type: disc;
-        }
-        li.indent
-        {
-         list-style-type: none;
-        }
-        li.indent2
-        {
-         list-style-type: none;
-         margin-left: 24px;
-        }
-        li.numbers
-        {
-         list-style-type: decimal;
-        }
-      </style>
+    <style>
+      li.disc
+      {
+       list-style-type: disc;
+      }
+      li.indent
+      {
+       list-style-type: none;
+      }
+      li.indent2
+      {
+       list-style-type: none;
+       margin-left: 24px;
+      }
+      li.numbers
+      {
+       list-style-type: decimal;
+      }
+    </style>
+
+    <!-- ------------------- -->
+    <!--      footer         -->
+    <!-- ------------------- -->
+    <style>  
+      .footer
+      {
+       width: 779px;
+       height: 32px;
+       background-image:url(images/bg_footer.gif);
+       background-repeat:no-repeat;
+       clear:both;
+       font-family: Verdana, Arial, Helvetica, sans-serif;
+       font-size: 9px;
+       font-weight: bold;
+       color:#FFFFFF;
+      }
+      .footer a
+      {
+       font-family: Verdana, Arial, Helvetica, sans-serif;
+       font-size: 9px;
+       font-weight: bold;
+       color:#000099;
+       text-decoration:none;
+      }
+      .footer a:hover
+      {
+       color:#FFFFFF;
+       text-decoration:none;
+      }
+    </style>
 
   </head>
   <body>
@@ -471,14 +474,14 @@
       <!--                                      -->
       <!--                                      -->
       <div id="header">
-        <div id="companyname" align="left">EarthWalk Software</div> <!-- companyname -->
-        <div id="companysm" align="left">and Consulting</div> <!-- companysm -->
-        <div id="menu" align="right"><a 
+        <div id="headerCompany" align="left">EarthWalk Software</div> <!-- headerCompany -->
+        <div id="headerCompanySm" align="left">and Consulting</div> <!-- headerCompanySm -->
+        <div id="headerMenu" align="right"><a 
 	     href="https://hub.docker.com/u/earthwalksoftware/">Docker Hub</a> | <a 
              href="https://github.com/EarthWalkSoftware?tab=repositories">Git Hub</a> | <a 
              href="http://jaywheeler.users.sourceforge.net/index.html">Source Forge</a> | <a 
              href="https://github.com/EarthWalkSoftware/earthwalksoftware.github.io/wiki">Wiki</a>
-        </div> <!-- menu  </div> -->
+        </div> <!-- headerMenu  </div> -->
       </div> <!-- header -->
 
       <br />
