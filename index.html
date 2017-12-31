@@ -273,13 +273,11 @@
        font-family: Verdana, Arial, Helvetica, sans-serif;
        font-size: 12px;
        font-weight: bold;
-       color:#000099;
        text-decoration:none;
       }
 	    
       .block a:hover
       {
-       color:#7DA5E0;
        font-size: 12px;
        text-decoration:none;
       }
@@ -389,21 +387,29 @@
     <!-- -------------- -->
     <style>
 	    
+      .border
+      {
+       border-style: solid;
+       border-width: 1px;
+       border-color: #000000;
+      }
+
       .green
       {
        color:#008700;
       }
 
-      .greenBorder
+      .green.border
       {
        border-color: #008700;
       }
 
-      .lightGreenBk
+      .green.border.background
       {
        background-color:#ECFDF1;
       }
-	    
+
+      .green.border.background
       .blue
       {
        color:#000099;
@@ -660,7 +666,7 @@
           <!-- --------------------- -->
           <!--      block            -->
           <!-- --------------------- -->
-          <div class="green greenBorder block">
+          <div class="green.order.background block">
 
               <div id="blockCentered">
  	        <span style="font-size:14px; font-weight:bold;">Featured Project: &nbsp;</span>
