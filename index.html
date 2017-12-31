@@ -205,7 +205,7 @@
     <!-- ------------------- -->
     <style>
 	    
-      .titleBlue
+      .title
       {
        font-family: Verdana, Arial, Helvetica, sans-serif; 
        font-weight: bold; 
@@ -223,42 +223,20 @@
       .subtitle
       {
        font-family: Verdana, Arial, Helvetica, sans-serif;
-       color:#000099;
        font-size:18px;
        font-weight: bold;
-       text-decoration: underline;
+       text-decoration:none;
       }
-	    
-      .subtitleGray 
+
+      .subtitle a
       {
-       font-family:Verdana, Arial, Helvetica, sans-serif;	
-       font-weight: bold;
-       font-size: 18px;
-       color: #CCCCCC;
-      }
-	    
-      .subtitleGray a
-      {
-       font-family: Verdana, Arial, Helvetica, sans-serif;
-       font-size: 18px;
-       font-weight: bold;
-       color:#CCCCCC;
        text-decoration:none;
        }
-	    
-      .subtitleGray a:hover
-      {
-       color:#000099;
-       text-decoration:none;
-      }
-	    
-    </style>
 
-    <!-- ------------------- -->
-    <!--   promoBlock        -->
-    <!-- ------------------- -->
-    <style>
-	    
+      .subtitle a:hover
+      {
+       text-decoration:underline;
+      }
 	    
     </style>
 
@@ -399,6 +377,11 @@
        background-color: #FFFFFF;
       }
 
+      .gray
+      {
+       color:#CCCCCC;
+      }
+
       .green
       {
        color:#008700;
@@ -428,7 +411,12 @@
       {
        background-color: #EDE8F6;
       }
-	    
+
+      .lightTeal
+      {
+       color: #7DA5E0; 
+      }
+
       .orange
       {
        color: #F97237;
@@ -569,9 +557,9 @@
       <!--    contentText       -->
       <!-- -------------------- -->
         <div id="contentText">
-         <span class="titleBlue">Welcome to EarthWalk Software</span>
+         <span class="title lightTeal">Welcome to EarthWalk Software</span>
           <br />
-          <span class="subtitleGray">Hosted by <a href="http://github.com">GitHub</a></span>
+          <span class="subtitle gray">Hosted by <a href="http://github.com">GitHub</a></span>
 
           <br />
           <br />
