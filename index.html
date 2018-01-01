@@ -153,11 +153,21 @@
        background-repeat:repeat-y;
       }
 
-      .leftMenuTitle
+      .leftTitle
       {
        margin-left:15px;
        margin-right:15px;
        text-align:center;
+       text-decoration:underline;
+       font-size: 12px;
+       font-weight: bold;
+      }
+
+      .leftSubTitle
+      {
+       margin-left:18px;
+       margin-right:15px;
+       text-align:left;
        text-decoration:underline;
        font-size: 12px;
        font-weight: bold;
@@ -431,6 +441,11 @@
        color: #000099;
       }
 
+      .dockerBlue
+      {
+       color:#2089C4
+      }
+
       .lightTeal
       {
        color: #7DA5E0; 
@@ -612,11 +627,13 @@
           <div class="leftMenuContent red">
 
             <div class="leftMenuText red">
-              <div class="leftMenuTitle blue">Debian 9</div>
-              <a class="blue" href="Documents/">Debian 9</a><br />
+              <div class="leftTitle dockerBlue">Docker Containers</div>
               <br />
-              <div class="leftMenuTitle green">Alpine Linux</div>
-              <a class="green" href="Documents/">Alpine Linux</a><br />
+              <div class="leftSubTitle dockerBlue">Debian 9</div>
+              <a class="dockerBlue" href="Documents/">kaptain-debian</a><br />
+              <br />
+              <div class="leftSubTitle green">Alpine Linux</div>
+              <a class="green" href="Documents/">alpine-svn</a><br />
               <br />
               <a class="red" href="Documents/">Docker Containers</a><br />
               <a class="red" href="Documents/">Docker Containers</a><br />
