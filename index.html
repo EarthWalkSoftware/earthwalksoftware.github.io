@@ -163,6 +163,11 @@
        font-weight: bold;
       }
 
+      .leftTitle.left
+      {
+       text-align:left;
+      }
+
       .leftSubTitle
       {
        margin-left:18px;
@@ -171,6 +176,11 @@
        text-decoration:underline;
        font-size: 12px;
        font-weight: bold;
+      }
+
+      .leftSubTitle.left
+      {
+       margin-left:15px;
       }
 
       .leftMenuText
@@ -446,6 +456,11 @@
        color:#2089C4;
       }
 
+      .githubBlue
+      {
+       color:#0366D6;
+      }
+
       .lightTeal
       {
        color: #7DA5E0; 
@@ -597,10 +612,10 @@
 
           <div class="leftMenuContent">
             <div class="leftMenuText blue">
-              <div class="leftTitle blue">Repositories</div>
+              <div class="leftTitle.left blue">Repositories</div>
               <br />
               <a class="dockerBlue" href="https://hub.docker.com/u/earthwalksoftware/">Docker Hub</a><br />
-              <a class="blue" href="https://github.com/EarthWalkSoftware?tab=repositories">Git Hub</a><br />
+              <a class="githubBlue" href="https://github.com/EarthWalkSoftware?tab=repositories">Git Hub</a><br />
               <a class="blue" href="http://jaywheeler.users.sourceforge.net/index.html">Source Forge</a><br />
               <a class="blue" href="https://github.com/EarthWalkSoftware/earthwalksoftware.github.io/wiki">Wiki Documents</a><br />
             </div>
@@ -630,7 +645,7 @@
             <div class="leftMenuText red">
               <div class="leftTitle dockerBlue">Docker Containers</div>
               <br />
-              <div class="leftSubTitle dockerBlue">Debian 9</div>
+              <div class="leftSubTitle left dockerBlue">Debian 9</div>
               <a class="dockerBlue" href="Documents/">kaptain-debian</a><br />
               <br />
               <div class="leftSubTitle green">Alpine Linux</div>
